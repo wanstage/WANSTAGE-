@@ -39,3 +39,6 @@ jobs:
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
+          git add .github/workflows/publish.yml
+git commit -m "ci: fix workflow to publish to GitHub Packages"
+git push
